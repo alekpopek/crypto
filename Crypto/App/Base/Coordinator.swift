@@ -23,8 +23,4 @@ class Coordinator {
     func stop(coordinator: Coordinator) {
         dependencies[coordinator.identifier] = nil
     }
-    
-    deinit {
-        print("\(String(describing: self)) was deinitialized")
-    }
 }
